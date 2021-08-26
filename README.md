@@ -8,8 +8,8 @@ I love the entire process of developing creative websites. I love the challenges
 
 ### 🤝 Connect with me:
 
-<a href="https://www.linkedin.com/in/kokre-vish-aa1b401a9/"><img align="left" src="https://raw.githubusercontent.com/VISHAWANATH953/VISHAWANATH953/main/images/linkedin.svg" alt="kokre-vish-aa1b401a9 | LinkedIn" width="21px"/></a>
-<a href="https://www.instagram.com/vishawanath_kokare/"><img align="left" src="https://raw.githubusercontent.com/VISHAWANATH953/VISHAWANATH953/main/images/instagram.svg" alt="vishawanath_kokare | Instagram" width="21px"/></a>
+<a href="https://www.linkedin.com/in/kokre-vish-aa1b401a9/"><img align="left" src="https://raw.githubusercontent.com/VISHAWANATH953/VISHAWANATH953/master/images/linkedin.svg" alt="kokre-vish-aa1b401a9 | LinkedIn" width="21px"/></a>
+<a href="https://www.instagram.com/vishawanath_kokare/"><img align="left" src="https://raw.githubusercontent.com/VISHAWANATH953/VISHAWANATH953/master/images/instagram.svg" alt="vishawanath_kokare | Instagram" width="21px"/></a>
 </br>
 - 💬 If you have any question/feedback, please do not hesitate to reach out to me!
 
