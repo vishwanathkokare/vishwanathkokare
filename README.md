@@ -4,14 +4,13 @@ Hi there, I'm <a href="https://vishawanath953.github.io/my-own-site/" target="_b
 
 <h2 align="center">Hey, I'm a Front-End Web Developer 💻</h2> 
 
-I love the entire process of developing creative websites. I love the challenges.
+<h4 align="center">I love the entire process of developing creative websites. I love the challenges.</h4>
 
 ### 🤝 Connect with me:
 
 <a href="https://www.linkedin.com/in/kokre-vish-aa1b401a9/"><img align="left" src="https://raw.githubusercontent.com/VISHAWANATH953/VISHAWANATH953/master/images/linkedin.svg" alt="kokre-vish-aa1b401a9 | LinkedIn" width="25px"/></a>
 <a href="https://www.instagram.com/vishawanath_kokare/"><img align="left" src="https://raw.githubusercontent.com/VISHAWANATH953/VISHAWANATH953/master/images/instagram.svg" alt="vishawanath_kokare | Instagram" width="25px"/></a>
 </br>
-- 💬 If you have any question/feedback, please do not hesitate to reach out to me!
 
 ## 🔭 I'm currently working on
 
