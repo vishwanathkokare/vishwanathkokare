@@ -40,4 +40,4 @@ Hi there, I'm <a href="https://vishawanath953.github.io/my-own-site/" target="_b
 [![Vish's github stats](https://github-readme-stats.vercel.app/api?username=VISHAWANATH953&count_private=true&show_icons=true&theme=onedark)](https://github.com/VISHAWANATH953)
 
 ## Languages
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=VISHAWANATH953&layout=compact)](https://github.com/VISHAWANATH953)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=VISHAWANATH953&layout=compact&theme=onedark)](https://github.com/VISHAWANATH953)
