@@ -37,4 +37,4 @@ Hi there, I'm <a href="https://vishawanath953.github.io/my-own-site/" target="_b
 ![](https://img.shields.io/badge/Tools-GitHub-informational?style=flat&logo=GitHub&color=181717)
 
 ## 📈 GitHub Stats
-[![Vish's github stats](https://github-readme-stats.vercel.app/api?username=VISHAWANATH953)](https://github.com/VISHAWANATH953)
+[![Vish's github stats](https://github-readme-stats.vercel.app/api?username=VISHAWANATH953&count_private=true&show_icons=true&theme=onedark)](https://github.com/VISHAWANATH953)
