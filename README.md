@@ -8,7 +8,6 @@ Hi there, I'm <a href="" target="_blank" rel="noreferrer">Vish</a> 👋
 
 ### 🤝 Connect with me:
 <a href="https://www.linkedin.com/in/kokre-vish-aa1b401a9/"><img align="left" src="https://raw.githubusercontent.com/VISHAWANATH953/VISHAWANATH953/master/images/linkedin.svg" alt="kokre-vish-aa1b401a9 | LinkedIn" width="25px"/></a>
-<a href="https://www.instagram.com/vishawanath_kokare/"><img align="left" src="https://raw.githubusercontent.com/VISHAWANATH953/VISHAWANATH953/master/images/instagram.svg" alt="vishawanath_kokare | Instagram" width="25px"/></a>
 </br>
 
 ## 💼 Technical Skills
@@ -23,7 +22,7 @@ Hi there, I'm <a href="" target="_blank" rel="noreferrer">Vish</a> 👋
 ![](https://img.shields.io/badge/Tools-GitHub-informational?style=flat&logo=GitHub&color=181717)
 
 ## 📈 GitHub Stats
-[![Vish's github stats](https://github-readme-stats.vercel.app/api?username=VISHAWANATH953&count_private=true&show_icons=true&theme=onedark)](https://github.com/VISHAWANATH953)
+[![Vish's github stats](https://github-readme-stats.vercel.app/api?username=vishwanathkokare&count_private=true&show_icons=true&theme=onedark)](https://github.com/VISHAWANATH953)
 
 ## Top Used Programing Languages
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=VISHAWANATH953&layout=compact&theme=onedark)](https://github.com/VISHAWANATH953)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vishwanathkokare&layout=compact&theme=onedark)](https://github.com/VISHAWANATH953)
