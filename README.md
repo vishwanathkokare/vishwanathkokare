@@ -1,5 +1,5 @@
 <h3 align="center">
-Hi there, I'm <a href="" target="_blank" rel="noreferrer">Vish</a> 👋
+Hi there, I'm <a href="" target="_blank" rel="noreferrer">Vishwanath Kokare</a> 👋
 </h3>
 
 <h2 align="center">Hey, I'm a App Developer & Full Stack Web Developer 💻</h2> 
