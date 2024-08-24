@@ -1,81 +1,64 @@
-$(document).ready(function () {
-    // typing animation
-    (function ($) {
-      $.fn.writeText = function (content) {
-        var contentArray = content.split(""),
-          current = 0,
-          elem = this;
-        setInterval(function () {
-          if (current < contentArray.length) {
-            elem.text(elem.text() + contentArray[current++]);
-          }
-        }, 80);
-      };
-    })(jQuery);
-  
-    // input text for typing animation
-    $("#holder").writeText("App Developer + Full-Stack Web Developer");
-  
-    // initialize wow.js
+document.addEventListener("DOMContentLoaded", () => {
+  // Typing animation
+  class TypingEffect {
+    constructor(element, content, interval = 80) {
+      this.element = element;
+      this.content = content;
+      this.interval = interval;
+      this.current = 0;
+      this.init();
+    }
+
+    init() {
+      this.intervalId = setInterval(() => {
+        if (this.current < this.content.length) {
+          this.element.textContent += this.content[this.current++];
+        } else {
+          clearInterval(this.intervalId);
+        }
+      }, this.interval);
+    }
+  }
+
+  // Input text for typing animation
+  new TypingEffect(document.querySelector("#holder"), "App Developer + Full-Stack Web Developer");
+
+  // Initialize WOW.js (ensure WOW.js is included in your project)
+  if (typeof WOW === "function") {
     new WOW().init();
-  
-    // Push the body and the nav over by 285px over
-    var main = function () {
-      $(".fa-bars").click(function () {
-        $(".nav-screen").animate(
-          {
-            right: "0px"
-          },
-          200
-        );
-  
-        $("body").animate(
-          {
-            right: "285px"
-          },
-          200
-        );
-      });
-  
-      // Then push them back */
-      $(".fa-times").click(function () {
-        $(".nav-screen").animate(
-          {
-            right: "-285px"
-          },
-          200
-        );
-  
-        $("body").animate(
-          {
-            right: "0px"
-          },
-          200
-        );
-      });
-  
-      $(".nav-links a").click(function () {
-        $(".nav-screen").animate(
-          {
-            right: "-285px"
-          },
-          500
-        );
-  
-        $("body").animate(
-          {
-            right: "0px"
-          },
-          500
-        );
-      });
-    };
-  
-    $(document).ready(main);
-  
-    // initiate full page scroll
-  
-    $("#fullpage").fullpage({
+  }
+
+  // Push the body and the nav over by 285px
+  const navScreen = document.querySelector(".nav-screen");
+  const body = document.body;
+
+  document.querySelector(".fa-bars").addEventListener("click", () => {
+    navScreen.style.transition = "right 200ms";
+    body.style.transition = "right 200ms";
+    navScreen.style.right = "0px";
+    body.style.right = "285px";
+  });
+
+  // Then push them back
+  document.querySelector(".fa-times").addEventListener("click", () => {
+    navScreen.style.transition = "right 200ms";
+    body.style.transition = "right 200ms";
+    navScreen.style.right = "-285px";
+    body.style.right = "0px";
+  });
+
+  document.querySelectorAll(".nav-links a").forEach(anchor => {
+    anchor.addEventListener("click", () => {
+      navScreen.style.transition = "right 500ms";
+      body.style.transition = "right 500ms";
+      navScreen.style.right = "-285px";
+      body.style.right = "0px";
+    });
+  });
+
+  // Initialize fullPage.js (ensure fullPage.js is included in your project)
+  if (typeof fullpage_api !== "undefined") {
+    new fullpage("#fullpage", {
       scrollBar: true,
       responsiveWidth: 400,
       navigation: true,
@@ -83,137 +66,104 @@ $(document).ready(function () {
       anchors: ["home", "about", "portfolio", "contact", "connect"],
       menu: "#myMenu",
       fitToSection: false,
-  
-      afterLoad: function (anchorLink, index) {
-        var loadedSection = $(this);
-  
-        //using index
-        if (index == 1) {
-          /* add opacity to arrow */
-          $(".fa-chevron-down").each(function () {
-            $(this).css("opacity", "1");
+      afterLoad: (origin, destination, direction) => {
+        const headerLinks = document.querySelector(".header-links");
+        const headerLinksAnchors = headerLinks.querySelectorAll("a");
+
+        if (destination.index === 0) {
+          document.querySelectorAll(".fa-chevron-down").forEach(icon => {
+            icon.style.opacity = "1";
           });
-          $(".header-links a").each(function () {
-            $(this).css("color", "white");
+          headerLinksAnchors.forEach(anchor => {
+            anchor.style.color = "white";
           });
-          $(".header-links").css("background-color", "transparent");
-        } else if (index != 1) {
-          $(".header-links a").each(function () {
-            $(this).css("color", "black");
+          headerLinks.style.backgroundColor = "transparent";
+        } else {
+          headerLinksAnchors.forEach(anchor => {
+            anchor.style.color = "black";
           });
-          $(".header-links").css("background-color", "white");
+          headerLinks.style.backgroundColor = "white";
         }
-  
-        //using index
-        if (index == 2) {
-          /* animate skill bars */
-          $(".skillbar").each(function () {
-            $(this)
-              .find(".skillbar-bar")
-              .animate(
-                {
-                  width: $(this).attr("data-percent")
-                },
-                2500
-              );
+
+        if (destination.index === 1) {
+          document.querySelectorAll(".skillbar").forEach(skillbar => {
+            const bar = skillbar.querySelector(".skillbar-bar");
+            bar.style.transition = "width 2.5s";
+            bar.style.width = skillbar.getAttribute("data-percent");
           });
         }
       }
     });
-  
-    // move section down one
-    $(document).on("click", "#moveDown", function () {
-      $.fn.fullpage.moveSectionDown();
-    });
-  
-    // fullpage.js link navigation
-    $(document).on("click", "#skills", function () {
-      $.fn.fullpage.moveTo(2);
-    });
-  
-    $(document).on("click", "#projects", function () {
-      $.fn.fullpage.moveTo(3);
-    });
-  
-    $(document).on("click", "#contact", function () {
-      $.fn.fullpage.moveTo(4);
-    });
-  
-    // smooth scrolling
-    $(function () {
-      $("a[href*=#]:not([href=#])").click(function () {
-        if (
-          location.pathname.replace(/^\//, "") ==
-            this.pathname.replace(/^\//, "") &&
-          location.hostname == this.hostname
-        ) {
-          var target = $(this.hash);
-          target = target.length
-            ? target
-            : $("[name=" + this.hash.slice(1) + "]");
-          if (target.length) {
-            $("html,body").animate(
-              {
-                scrollTop: target.offset().top
-              },
-              700
-            );
-            return false;
-          }
-        }
-      });
-    });
-  
-    //ajax form
-    $(function () {
-      // Get the form.
-      var form = $("#ajax-contact");
-  
-      // Get the messages div.
-      var formMessages = $("#form-messages");
-  
-      // Set up an event listener for the contact form.
-      $(form).submit(function (e) {
-        // Stop the browser from submitting the form.
-        e.preventDefault();
-  
-        // Serialize the form data.
-        var formData = $(form).serialize();
-  
-        // Submit the form using AJAX.
-        $.ajax({
-          type: "POST",
-          url: $(form).attr("action"),
-          data: formData
-        })
-          .done(function (response) {
-            // Make sure that the formMessages div has the 'success' class.
-            $(formMessages).removeClass("error");
-            $(formMessages).addClass("success");
-  
-            // Set the message text.
-            $(formMessages).text(response);
-  
-            // Clear the form.
-            $("#name").val("");
-            $("#email").val("");
-            $("#message").val("");
-          })
-          .fail(function (data) {
-            // Make sure that the formMessages div has the 'error' class.
-            $(formMessages).removeClass("success");
-            $(formMessages).addClass("error");
-  
-            // Set the message text.
-            if (data.responseText !== "") {
-              $(formMessages).text(data.responseText);
-            } else {
-              $(formMessages).text(
-                "Oops! An error occured and your message could not be sent."
-              );
-            }
-          });
-      });
+  }
+
+  // Move section down one
+  document.querySelector("#moveDown").addEventListener("click", () => {
+    if (typeof fullpage_api !== "undefined") {
+      fullpage_api.moveSectionDown();
+    }
+  });
+
+  // Fullpage.js link navigation
+  document.querySelector("#skills").addEventListener("click", () => {
+    if (typeof fullpage_api !== "undefined") {
+      fullpage_api.moveTo(2);
+    }
+  });
+
+  document.querySelector("#projects").addEventListener("click", () => {
+    if (typeof fullpage_api !== "undefined") {
+      fullpage_api.moveTo(3);
+    }
+  });
+
+  document.querySelector("#contact").addEventListener("click", () => {
+    if (typeof fullpage_api !== "undefined") {
+      fullpage_api.moveTo(4);
+    }
+  });
+
+  // Smooth scrolling
+  document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
+    anchor.addEventListener("click", event => {
+      event.preventDefault();
+      const targetId = anchor.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId) || document.querySelector(`[name="${targetId}"]`);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: "smooth"
+        });
+      }
     });
   });
-  
+
+  // AJAX form handling
+  const form = document.querySelector("#ajax-contact");
+  const formMessages = document.querySelector("#form-messages");
+
+  if (form) {
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: formData
+      })
+        .then(response => response.text())
+        .then(text => {
+          formMessages.classList.remove("error");
+          formMessages.classList.add("success");
+          formMessages.textContent = text;
+
+          form.reset();
+        })
+        .catch(() => {
+          formMessages.classList.remove("success");
+          formMessages.classList.add("error");
+          formMessages.textContent = "Oops! An error occurred and your message could not be sent.";
+        });
+    });
+  }
+});
