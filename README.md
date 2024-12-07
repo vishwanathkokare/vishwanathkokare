@@ -2,7 +2,7 @@
 Hi there, I'm <a href="https://vishwanathkokare.github.io/vishwanathkokare/" target="_blank" rel="noreferrer">Vishwanath Kokare</a> 👋
 </h3>
 
-<h2 align="center">Hey, I'm a App Developer & Full Stack Web Developer 💻</h2> 
+<h2 align="center">Hey, I'm a Web Developer 💻</h2> 
 
 <h4 align="center">I love the entire process of developing creative websites. I love to challenge myself.</h4>
 
