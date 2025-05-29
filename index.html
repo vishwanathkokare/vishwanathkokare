@@ -4,210 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Vishwanath Kokare</title>
     <meta name="description" content="Web Developer">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        main>section.section {
+            min-height: 100vh;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- navbar header -->
-    <div class="nav-header">
-        <!--     <div class="nav-brand">
-        <img src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/bradlogo2.png">
-      </div> -->
-        <i class="fa fa-bars fa-3x"></i>
-        <div class="header-links">
-            <ul>
-                <!--         <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li> -->
-                <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
-                <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- end navbar header -->
-
-    <!-- sidebar slider -->
-    <div class="nav-screen">
-        <i class="fa fa-times fa-3x"></i>
-        <div class="nav-container">
-            <div class="nav-links">
-                <ul id='myMenu'>
-                    <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
-                    <!--           <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li> -->
-                    <!--           <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li> -->
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- end navbar slider -->
-
-    <!-- begin fullpage -->
-
-    <div id="fullpage">
-
-        <!-- begin section -->
-
-        <div class="section aboutme" data-anchor="aboutme">
-            <div class="opaque-bg animated fadeInDown">
-                <h1 style="color:white">Vishwanath Kokare</h1>
-                <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
-            </div>
-            <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
-        </div>
-        <!-- end section -->
-
-        <!-- begin section -->
-
-        <div class="section" data-anchor="skills">
-            <div class="content">
-                <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT ME</h1>
-                <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, I'm Vishwanath kokare!
-                    Web Developer focused on creating clean, responsive web designs!</p>
-
-                <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
-                    <div class="skillbar clearfix " data-percent="80%">
-                        <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML|CSS</span></div>
-                        <div class="skillbar-bar" style="background: #DD1E2F;"></div>
-                        <div class="skill-bar-percent">70%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="65%">
-                        <div class="skillbar-title" style="background: #fdb924;"><span>JS(TS)</span></div>
-                        <div class="skillbar-bar" style="background: #fdb924;"></div>
-                        <div class="skill-bar-percent">65%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="70%">
-                        <div class="skillbar-title" style="background: #0EA5E9;"><span>Tailwind</span></div>
-                        <div class="skillbar-bar" style="background: #0EA5E9;"></div>
-                        <div class="skill-bar-percent">70%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="80%">
-                        <div class="skillbar-title" style="background: #2e3440;"><span>MERN>Stack</span></div>
-                        <div class="skillbar-bar" style="background: #2e3440;"></div>
-                        <div class="skill-bar-percent">80%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="75%">
-                        <div class="skillbar-title" style="background: #0074a6;"><span>ReactNative</span></div>
-                        <div class="skillbar-bar" style="background: #0074a6;"></div>
-                        <div class="skill-bar-percent">75%</div>
-                    </div> <!-- End Skill Bar -->
-
+    <main id="fullpage">
+        <!-- Hero / Intro Section -->
+        <section class="section aboutme" data-anchor="aboutme" style="background: url('assets/banner/matrix.gif') center center / cover no-repeat;">
+            <div class="container text-center d-flex flex-column align-items-center justify-content-center" style="min-height:100vh;">
+                <!-- Profile Image Section -->
+                <div class="mb-4">
+                    <img src="assets/profile.jpg" alt="Vishwanath Kokare" class="rounded-circle shadow" style="width: 140px; height: 140px; object-fit: cover; border: 4px solid #fff;">
+                </div>
+                <!-- Name Typing Effect -->
+                <div class="opaque-bg p-4 rounded-3" style="background: rgba(0,0,0,0.7); display: inline-block;">
+                    <h1 class="text-white mb-3 h1-nowrap">
+                        <span id="holder"></span><span class="blinking-cursor">|</span>
+                    </h1>
+                    <!-- Social Media Icons -->
+                    <div class="social-links d-flex flex-wrap justify-content-center align-items-center gap-2 mt-3">
+                        <span>
+                            <a href="https://in.linkedin.com/in/vishwanath-kokare-aa1b401a9" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                <i class="fa fa-linkedin fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="mailto:koarevishwanathmail@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
+                                <i class="fa fa-envelope fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://github.com/vishwanathkokare" target="_blank" rel="noopener noreferrer" title="GitHub">
+                                <i class="fa fa-github fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://www.youtube.com/@vishwanathkokare021" target="_blank" rel="noopener noreferrer" title="YouTube">
+                                <i class="fa fa-youtube-play fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://x.com/VishawanathKok5" target="_blank" rel="noopener noreferrer" title="X (Twitter)">
+                                <i class="ri-twitter-x-fill fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://www.threads.com/@vishwanathkokare021" target="_blank" rel="noopener noreferrer" title="Threads">
+                                <i class="bi bi-threads fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://www.instagram.com/vishwanathkokare021/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                                <i class="fa fa-instagram fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://in.pinterest.com/vishwanathkokare021/" target="_blank" rel="noopener noreferrer" title="Pinterest">
+                                <i class="fa fa-pinterest fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://www.quora.com/" target="_blank" rel="noopener noreferrer" title="Quora">
+                                <span style="display:inline-block; font-size:2em; font-weight:bold; color:white; width:1em; text-align:center;">Q</span>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer" title="Reddit">
+                                <i class="ri-reddit-fill" style="font-size:2em"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://t.me/" target="_blank" rel="noopener noreferrer" title="Telegram">
+                                <i class="ri-telegram-fill fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://www.snapchat.com/" target="_blank" rel="noopener noreferrer" title="Snapchat">
+                                <i class="ri-snapchat-fill fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://www.facebook.com/kokarevish" target="_blank" rel="noopener noreferrer" title="Facebook">
+                                <i class="fa fa-facebook fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://www.tumblr.com/" target="_blank" rel="noopener noreferrer" title="Tumblr">
+                                <i class="fa fa-tumblr fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://onlyfans.com/" target="_blank" rel="noopener noreferrer" title="OnlyFans">
+                                <i class="ri-user-6-fill fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://mojapp.in/" target="_blank" rel="noopener noreferrer" title="Moj">
+                                <i class="ri-movie-2-fill fa-2x"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://www.joshapp.com/" target="_blank" rel="noopener noreferrer" title="Josh">
+                                <i class="ri-video-fill fa-2x"></i>
+                            </a>
+                        </span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- end section -->
-
-        <!-- begin section -->
-    <!--  <div class="section" data-anchor="projects"> -->
-       <!-- <div class="content-slide">
-          <div class="slide">
-            <h1 class="wow fadeInDown" data-wow-delay="0.2s">Todo App</h1>
-            <p class="wow fadeInDown" data-wow-delay="0.2s">A Todo Application<span style="vertical-align: middle;margin-left:4px;"><a href="https://github.com/vishwanathkokare/todo_application" target="_blank" style="color:black"><i class="fa fa-github fa-2x"></i></a></span></p>
-            <iframe class="wow fadeInUp" data-wow-delay="0.2s"src="https://vishwanathkokare.github.io/todo_application/" title="Todo Application"  ></iframe>
-          </div>
-          <div class="slide">
-            <h1>TicTacToe</h1>
-            <p>TicTacToe Game Application<span style="vertical-align: middle;margin-left:4px;"><a href="https://github.com/vishwanathkokare/tictactoe" target="_blank" style="color:black"><i class="fa fa-github fa-2x"></i></a></span></p>
-            <iframe class="wow fadeInUp" data-wow-delay="0.2s"src="https://vishwanathkokare.github.io/tictactoe/" title="Todo Application"  ></iframe>
-          </div> --> <!--
-          <div class="slide">
-            <h1>PORTFOLIO</h1>
-            <p>Mockup of a personal portfolio I was working on for a friend.</p>
-            <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/cascioportfolio.jpg">
-          </div>
-          <div class="slide">
-            <h1>THATONEBLOG</h1>
-            <p>Minimalist blogging platform.</p>
-            <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/blog.jpg">
-          </div>
-          <div class="slide">
-            <h1>PIXBORED</h1>
-            <p>Website for sharing images and gifs.</p>
-            <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/pixbored.jpg">
-          </div>
-          <div class="slide">
-            <h1>PERSONAL WEBSITE</h1>
-            <p>Responsive vertical/horizontal header website theme.</p>
-            <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/personalsite.jpg">
-          </div> -->
-       <!-- </div>
-      </div> -->
-        <!-- end section -->
-
-        <!-- begin section -->
-
-        <!--     <div class="section" data-anchor="contact">
-        <div class="content wow fadeInDown" data-wow-delay="0.2s">
-          <h1>CONTACT ME</h1>
-          <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
-          <br>
-          <div class="contact-form">
-  
-            <div id="form-messages"></div>
-            <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
-              <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
-                <input type="text" class="form-control" id="name" name="name" placeholder="NAME" data-error="Field can't be blank!" required>
-                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                <div class="help-block with-errors"></div>
-              </div>
-  
-              <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
-                <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" data-error="Field can't be blank!" required>
-                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                <div class="help-block with-errors"></div>
-              </div>
-  
-              <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
-                <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
-                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                <div class="help-block with-errors"></div>
-              </div>
-  
-              <div class="hidden">
-                <input type="text" class="form-control" id="human" name="human" placeholder="">
-              </div>
-              <div class="wow fadeInUp" data-wow-delay="1s">
-                <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
-              </div>
-            </form>
-            <br>
-          </div>
-        </div>
-      </div> -->
-        <!-- end section -->
-
-        <!-- begin section -->
-
-        <div class="section fp-auto-height">
-            <div class="footer">
-                <p>CONNECT WITH ME</p>
-                <div class="social-links">
-                    <span><a href="https://in.linkedin.com/in/vishwanath-kokare-aa1b401a9" target="_blank"><i
-                                class="fa fa-linkedin fa-2x"></i></a></span>
-                    <span><a target="_blank" href="mailto:shrvish@proton.me" target="_blank"><i
-                                class="fa fa-envelope fa-2x"></i></a></span>
-                    <span><a href="https://github.com/vishwanathkokare" target="_blank"><i
-                                class="fa fa-github fa-2x"></i></a></span>
-                </div>
-            </div>
-        </div>
-        <!-- end section -->
-
-    </div>
-    <!-- end fullpage -->
-    <!-- JavaScript files -->
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
-    <script src="script.js"></script>
+        </section>
+    </main>
+    <script src="script.js" type="module"></script>
 </body>
 
 </html>
