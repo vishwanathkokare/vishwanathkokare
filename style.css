@@ -1,0 +1,378 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* start font */
+@font-face {
+  font-family: 'HEINAN';
+  src: url('assets/fonts/HEINAN.otf') format('otf'),
+       url('assets/fonts/HEINAN.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* end font */
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* padding */
+  padding: 16px;
+  z-index: 0;
+  font-family: 'HEINAN';
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: transparent;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 8px 16px;
+  border: 4px solid black;
+  border-radius: 8px;
+}
+
+.btn-secondary {
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px 16px;
+}
+
+/* start navbar */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  z-index: 998;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.nav-links li {
+  margin: 0 8px;
+}
+
+.nav-links a:hover {
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+/* start of navbar menu mobile */
+.navbar-menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 999;
+  display: none;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.mobile-nav-links {
+  list-style-type: none;
+  line-height: 38px;
+}
+
+.mobile-nav-links li {
+  text-transform: capitalize;
+  font-size: 24px;
+}
+
+.mobile-nav-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-close button {
+  text-transform: uppercase;
+}
+
+/* end of navbar menu mobile */
+
+/* end navbar */
+
+/* start hero */
+.hero {
+  padding: 140px 0;
+  text-transform: capitalize;
+}
+
+.hero-first-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-profile-pic {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 60px;
+  height: 80px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.hero-profile-pic img {
+  object-fit: cover;
+}
+
+.hero-mid-line {
+  margin: 8px 0;
+}
+
+.btn.email-me {
+  display: block;
+  margin-top: 16px;
+  max-width: 140px;
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+/* end hero */
+
+/* start project */
+.projects {
+  text-transform: capitalize;
+}
+
+.projects-head-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+.projects-section-title {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.projects-card-section {
+  margin-top: 40px;
+}
+
+.projects-card {
+  width: 280px;
+  border: 4px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.projects-card figure {
+  width: 100%;
+  height: 240px;
+}
+
+.projects-card-info {
+  padding: 8px 18px;
+}
+
+.card-info-name-and-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  margin: 8px 0;
+}
+
+.link-icon {
+  display: block;
+}
+
+.link-icon figure {
+  width: 18px;
+  height: 18px;
+}
+/* end project */
+
+/* start skills */
+.skills {
+  margin-top: 108px;
+}
+
+.skills-head h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.skills-content {
+  margin: 80px 0;
+  display: flex;
+  flex-flow: row wrap;
+  place-content: center;
+  gap: 24px;
+}
+
+.skill figure {
+  width: 120px;
+  height: auto;
+}
+/* end of skills */
+
+/* start of about me */
+.about-me-info-head {
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+/* end of about me */
+
+/* start of contact me and footer */
+footer {
+  margin-top: 108px;
+}
+
+.first-line ul,
+.last-line ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  gap: 18px;
+}
+
+.mid-line p {
+  text-align: center;
+  margin: 18px auto;
+}
+
+.rotate-left {
+  rotate: -30deg;
+  margin-top: 31px;
+}
+
+.rotate-right {
+  rotate: 40deg;
+  margin-top: 31px;
+}
+
+.last-line-rotate-left {
+  rotate: 30deg;
+  margin-bottom: 31px;
+  margin-right: 24px;
+}
+
+.upwork {
+  margin-left: 24px;
+}
+
+.fiverr {
+  margin-right: 24px;
+}
+
+.last-line-rotate-right {
+  rotate: -30deg;
+  margin-bottom: 31px;
+  margin-left: 24px;
+}
+
+.contact-buttons {
+  margin: 48px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-buttons button {
+  text-transform: uppercase;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 18px;
+}
+
+/* end of contact me and footer */
+
+/* start of responsive desktop */
+@media screen and (min-width: 700px) {
+  /* start navbar */
+  .menu {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+  /* end navbar */
+
+  /* start of hero section */
+  .hero {
+   display: flex;
+   align-items:flex-end; 
+   justify-content: flex-end;
+   flex-direction: column;
+  }
+  /* end of hero section */
+
+  /* start about me */
+  .about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .about-me-img,
+  .about-me-info {
+    width: 45%;
+  }
+
+  .about-me-info {
+    font-size: 18px;
+  }
+
+  .about-me-img figure {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* end about me */
+
+  /* start contact me */
+  .contact-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  /* end contact me */
+}
+/* end of responsive desktop */
