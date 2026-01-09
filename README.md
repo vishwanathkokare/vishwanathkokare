@@ -26,29 +26,6 @@ Actively seeking <b>Frontend / React / React Native Internship or Job</b>.
 
 ---
 
-## 🛠 Tech Stack
-
-**Frontend**
-- HTML5, CSS3, JavaScript (ES6+)
-- React.js, Next.js
-- TypeScript
-- Tailwind CSS, Shadcn/UI
-
-**Mobile**
-- React Native
-- Expo
-
-**State Management**
-- Redux Toolkit
-- Zustand
-
-**Design & Tools**
-- Figma
-- Git & GitHub
-- VS Code
-
----
-
 ## 📌 Featured Projects
 
 👉 Check out my live projects & portfolio:  
@@ -74,6 +51,7 @@ Actively seeking <b>Frontend / React / React Native Internship or Job</b>.
 
 ⭐ **Open to internships, junior roles & freelance opportunities**  
 ⭐ If you like my work, please consider giving a ⭐ to my repositories
+
 
 
 
