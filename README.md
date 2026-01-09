@@ -1,17 +1,100 @@
 <h3 align="center">
-Hi there, I'm <a href="https://vishwanathkokare.github.io/vishwanathkokare/" target="_blank" rel="noreferrer">Vishwanath Kokare</a> 👋
+Hi there 👋, I'm 
+<a href="https://vishwanathkokare.github.io/vishwanathkokare/" target="_blank" rel="noreferrer">
+Vishwanath Kokare
+</a>
 </h3>
 
-<h2 align="center">Hey, I'm a Web Developer 💻</h2> 
+<h2 align="center">
+Frontend Web & React Native Developer 💻📱
+</h2>
 
-<h4 align="center">I love the entire process of developing creative websites. I love to challenge myself.</h4>
+<p align="center">
+I build modern, responsive, and user-friendly web & mobile applications.<br/>
+Actively seeking <b>Frontend / React / React Native Internship or Job</b>.
+</p>
 
-### 🤝 Connect with me:
-<a href="https://www.linkedin.com/in/kokre-vish-aa1b401a9/"><img align="left" src="https://raw.githubusercontent.com/VISHAWANATH953/VISHAWANATH953/master/images/linkedin.svg" alt="kokre-vish-aa1b401a9 | LinkedIn" width="25px"/></a>
-</br>
+---
+
+## 👨‍💻 About Me
+
+- 🚀 Self-taught **Frontend Web & React Native Developer**
+- 💼 Looking for **Internship / Entry-Level Frontend Developer role**
+- 🧠 Strong focus on **clean UI, reusable components & performance**
+- 📱 Experience building **mobile-first & cross-platform apps**
+- 🌱 Continuously learning and building real-world projects
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend**
+- HTML5, CSS3, JavaScript (ES6+)
+- React.js, Next.js
+- TypeScript
+- Tailwind CSS, Shadcn/UI
+
+**Mobile**
+- React Native
+- Expo
+
+**State Management**
+- Redux Toolkit
+- Zustand
+
+**Design & Tools**
+- Figma
+- Git & GitHub
+- VS Code
+
+---
+
+## 📌 Featured Projects
+
+👉 Check out my live projects & portfolio:  
+🌐 **Portfolio:** https://vishwanathkokare.github.io/vishwanathkokare/
+
+> I focus on real-world projects that demonstrate UI quality, scalability, and best practices.
+
+---
 
 ## 📈 GitHub Stats
-[![Vish's github stats](https://github-readme-stats.vercel.app/api?username=vishwanathkokare&count_private=true&show_icons=true&theme=onedark)](https://github.com/VISHAWANATH953)
 
-## Top Used Programing Languages
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vishwanathkokare&layout=compact&theme=onedark)](https://github.com/VISHAWANATH953)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=vishwanathkokare&show_icons=true&theme=onedark&count_private=true" />
+</p>
+
+---
+
+## 🔥 GitHub Streaks
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=vishwanathkokare&theme=onedark&hide_border=false" />
+</p>
+
+---
+
+## 🧠 Top Languages
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vishwanathkokare&layout=compact&theme=onedark" />
+</p>
+
+---
+
+## 🤝 Connect With Me
+
+<p align="left">
+<a href="https://www.linkedin.com/in/kokre-vish-aa1b401a9/" target="_blank">
+  <img src="https://raw.githubusercontent.com/VISHAWANATH953/VISHAWANATH953/master/images/linkedin.svg" alt="LinkedIn" width="25px"/>
+</a>
+</p>
+
+- 📧 Email: **vishwanthkokare@gmail.com**
+- 🌐 Portfolio: **vishwanathkokare.github.io**
+- 📍 Location: Nanded, Maharashtra, India
+
+---
+
+⭐ **Open to internships, junior roles & freelance opportunities**  
+⭐ If you like my work, please consider giving a ⭐ to my repositories
