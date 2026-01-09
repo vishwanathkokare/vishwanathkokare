@@ -58,36 +58,6 @@ Actively seeking <b>Frontend / React / React Native Internship or Job</b>.
 
 ---
 
-## 📈 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vishwanathkokare&show_icons=true&theme=onedark&count_private=true" />
-</p>
-
----
-
-## 🧠 Top Languages
-
-<p align="center">
-  <img 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=vishwanathkokare&layout=compact&theme=onedark"
-    alt="Top Languages"
-  />
-</p>
-
----
-
-## 🔥 GitHub Streaks
-
-<p align="center">
-  <img 
-    src="https://streak-stats.demolab.com?user=vishwanathkokare&theme=onedark"
-    alt="GitHub Streak"
-  />
-</p>
-
----
-
 ## 🤝 Connect With Me
 
 <p align="left">
@@ -104,5 +74,6 @@ Actively seeking <b>Frontend / React / React Native Internship or Job</b>.
 
 ⭐ **Open to internships, junior roles & freelance opportunities**  
 ⭐ If you like my work, please consider giving a ⭐ to my repositories
+
 
 
